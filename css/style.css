@@ -1,3 +1,6 @@
 body {
- background-image:url(../img/pexels-photo-1216345.jpeg);
+ background-image:url("../img/thunderstorm.jpeg");
+}
+.cover-image {
+ width: 400px;
 }
