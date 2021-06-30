@@ -1,6 +1,57 @@
-body {
- background-image:url("../img/thunderstorm.jpeg");
+#title {
+  /*font-family: '';*/
 }
-.cover-image {
+
+#body {
+ /*background-image:url("");*/
+ background-color: #ccdbfd;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+#main-image {
  width: 400px;
+}
+
+#header {
+ background-color: #abc4ff;
+ height: 75px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#nav-bar {
+
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #abc4ff;
+}
+
+li a:hover {
+  background-color:#abc4ff;
+}
+
+#footer {
+ background-color: #abc4ff;
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%
+ 
+}
+
+@media screen and (min-width: 800px) {
+  main {
+   flex-direction: row;
+  }
 }
