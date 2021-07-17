@@ -1,57 +1,203 @@
-#title {
-  /*font-family: '';*/
+.background {
+  background-color: #d7e3fc;
+  padding: 10px;
 }
 
-#body {
- /*background-image:url("");*/
- background-color: #ccdbfd;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+.header-container {
+  background-image: linear-gradient(to right, #9bafd9 , #103783);
+  width: 100%;
+  height: 130px;
+  border-radius: 25px 25px 0 0;
+  border-color: black;
+  border-style: solid;
+  margin-right: 50px;
 }
 
-#main-image {
- width: 400px;
-}
-
-#header {
- background-color: #abc4ff;
- height: 75px;
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-#nav-bar {
-
-}
-
-li {
+.main-title h1 {
   float: left;
-  list-style: none;
+  font-family: "Sofia", sans-serif;
+  font-size: 52px;
+  padding-left: 15px;
+  margin-top: 35px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #ced4da;
+  text-align: justify;
 }
 
-li a {
-  display: block;
-  padding: 8px;
-  background-color: #abc4ff;
+.main-nav {
+  float: right;
+  border-radius: 25%;
 }
 
-li a:hover {
-  background-color:#abc4ff;
+.main-nav ul {
+  list-style-type: none;
+  font-family: "Sofia", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-#footer {
- background-color: #abc4ff;
- position: fixed;
- left: 0;
- bottom: 0;
- width: 100%
- 
+.main-nav li {
+  float: left;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (min-width: 800px) {
-  main {
-   flex-direction: row;
+.main-nav li a {
+  display: inline-block;
+  float: right;
+  background-color: #9bafd9;
+  padding: 55px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  border-style: ridge;
+  border-color: black;
+  padding: 13px;
+  margin: 55px 10px 0 0;
+  text-transform: uppercase;
+}
+
+.main-nav li a:hover {
+  background-color: #536c9a;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  border-style: ridge;
+  border-color: black;
+  padding: 13px;
+  margin: 55px 10px 0 0;
+  text-transform: uppercase;
+}
+
+.main-container {
+  background-image: linear-gradient(to right, #9bafd9 , #103783);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.main-container img {
+  float: none;
+  width: 480px;
+  height: 550px;
+  border-radius: 25px;
+  border-style: dotted;
+  border-color: black;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.main-container p {
+  text-align: inherit;
+  font-family: "Sofia", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.footer-container {
+  background-image: linear-gradient(to right, #9bafd9 , #103783);
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 25px 25px;
+  border-style: solid;
+  border-color: black;
+}
+
+.copyright {
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 650px) {
+
+  .background {
+    background-color: #d7e3fc;
+    padding: 10px;
   }
+
+  .header-container {
+    background-image: linear-gradient(to right, #9bafd9 , #103783);
+    width: 145%;
+    height: 130px;
+    border-radius: 25px 25px 0 0;
+    border-color: black;
+    border-style: solid;
+    margin-right: 50px;
+  }
+
+  .main-title h1 {
+    float: left;
+    font-family: "Sofia", sans-serif;
+    font-size: 45px;
+    padding-left: 15px;
+    margin-top: 45px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px #ced4da;
+    text-align: justify;
+  }
+
+  .main-container {
+    background-image: linear-gradient(to right, #9bafd9 , #103783);
+    width: 145%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .main-container img {
+    float: none;
+    width: 350px;
+    height: 380px;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: black;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .main-container p {
+    text-align: inherit;
+    font-family: "Sofia", sans-serif;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .footer-container {
+    background-image: linear-gradient(to right, #9bafd9 , #103783);
+  width: 145%;
+  height: 60px;
+  border-radius: 0 0 25px 25px;
+  border-style: solid;
+  border-color: black;
+  }
+
+  .copyright {
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+}
+
+/* For Tablets */
+@media screen and (min-width: 768px) {
+  
 }
