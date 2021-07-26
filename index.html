@@ -1,6 +1,7 @@
 <!-- Needed Information at Top -->
 <!DOCTYPE html>
 <html class="background" lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
+        <!-- Nav Bar Icon for Mobile-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- CSS and JS spreadsheets for Webpage -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -16,28 +20,32 @@
 
         <title>Stormy Thoughts</title>
     </head>
+
     <body>
+        <div>
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="top-nav">
+                <a href="#home" class="active">
+                    <h1>Stormy Thoughts</h1>
+                </a>
+            <div id="links">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
         <!-- Header Container including Title, Logo Icon & Nav Bar -->
         <header class="container-header">
             <div class="title-main">
                 <h1>Stormy Thoughts</h1>
             </div>
-
-        <!-- For Mobile Navigation Bar -->
-        <div class="mobile-container">
-            <div class="nav-bar" id="mobile-nav">
-                <div class="links">
-                    <a class="active" href="#home">Home</a>
-                    <a href="#aboutme">About Me</a>
-                    <a href="#questionaire">Questionaire</a>
-                    <a href="#discussion">Discussion</a>
-                    <a href="#resources">Resources</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
         </header>
         <main class="container-main">
             <!--<img class="home-img" src="img/dark-rainy-girl-umbrella-pexels.jpg">-->
