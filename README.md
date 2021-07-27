@@ -1,4 +1,4 @@
 # Stormy Thoughts
 
 
-View webpage <a href="https://github.com/thestormvixen/Stormy-Thoughts.git">here</a>.
+View webpage <a href="https://thestormvixen.github.io/Stormy-Thoughts/">here</a>.
