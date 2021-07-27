@@ -23,19 +23,21 @@
 
     <body>
         <div>
-            <!-- Simulate a smartphone / tablet -->
+            <!-- Top Nav Bar for Mobile -->
             <div class="mobile-container">
 
             <!-- Top Navigation Menu -->
             <div class="top-nav">
-                <a href="#home" class="active">
+                <a href="#main-title">
                     <h1>Stormy Thoughts</h1>
                 </a>
             <div id="links">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#Questionare">Questionare</a>
             </div>
+
+            <!-- JavaScript for Mobile Nav Bar -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -43,13 +45,29 @@
     
         <!-- Header Container including Title, Logo Icon & Nav Bar -->
         <header class="container-header">
-            <div class="title-main">
+            <div>
                 <h1>Stormy Thoughts</h1>
             </div>
         </header>
         <main class="container-main">
-            <!--<img class="home-img" src="img/dark-rainy-girl-umbrella-pexels.jpg">-->
+            <img class="home-img" src="img/blonde-girl-ocean-pexels.jpg" alt="blonde girl looking at at ocean">
+
+            <h2>How important is <u>your</u> Mental Health? </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia. Vitae turpis massa sed elementum tempus egestas sed sed. Consequat mauris nunc congue nisi. Phasellus egestas tellus rutrum tellus pellentesque. Eget mauris pharetra et ultrices neque ornare aenean. In ante metus dictum at tempor commodo ullamcorper a lacus. Vitae congue mauris rhoncus aenean vel. Ipsum consequat nisl vel pretium lectus quam. Urna duis convallis convallis tellus id interdum.</p>
+            <form class="submit-form" action="/action_page.php">  
+                <div>
+                    <input type="text" id="first-name" name="firstname" placeholder="First name" required>
+                </div>
+                <div>
+                    <input type="text" id="email" name="email" placeholder="E-mail address" required>
+                </div>
+                <div>
+                    <textarea id="message" name="message" placeholder="What are your thoughts?"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </main>
         <footer class="footer-main">
             <p>&copy; 2021 Stormy Thoughts</p>
