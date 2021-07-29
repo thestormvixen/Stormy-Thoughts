@@ -9,7 +9,7 @@ html {
 
 .background {
   background-color: #d7e3fc;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Begin Mobile Nav Bar */
@@ -19,7 +19,7 @@ html {
   margin: 0 auto 40px;  
   background-color: #82a0bc;
   border-radius : 25px;
-  color: white;
+  color: black;
   border-radius: 10px;
 }
 
@@ -33,8 +33,8 @@ html {
 .top-nav h1 {
   color: black;
   font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-  padding: 0;
+  font-size: 50px;
+  padding: 10px;
   margin: 0;
 }
 
@@ -45,28 +45,24 @@ html {
 }
 
 .top-nav a {
-  font-family: 'Dancing Script', cursive;
-  font-style: bold;
+  font-family: 'Righteous', cursive;
   color: black;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  text-transform: uppercase;
+  font-size: 15px;
   display: block;
   margin: 10px;
   padding: 0;
 }
 
 .top-nav a.icon {
-  background: #82a0bc;
+  background: #3e5c76;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.top-nav a.icon:hover {
-  background-color: #3e5c76;
-  color: black;
+  padding: 10px;
 }
 
 .top-nav a:hover {
@@ -74,44 +70,51 @@ html {
   color: black;
 }
 
-.active {
-  width: 100%;
-  background-color: white;
-  color: black;
-}
 /* End Mobile Nav Bar */
 
-/*h1 {
-  color: black;
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-  padding: 0;
-  margin: 0;
-}*/
-
-h2 {
-  color: black;
+.search-bar {
+  display: block;
+  font-family: 'Lobster', cursive;
   text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: content-box;
 }
 
-p {
-  color: black;
-  text-align: inherit;
-  font-family: 'Shadows Into Light', cursive;
+.search button {
+  float: right;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.container-header h1 {
-  display: hidden;
+.main-title h1 {
+  display: none;
 }
 
 .container-main {
-  /*background-image: linear-gradient(to right, #9bafd9 , #103783);*/
   background-color: #82a0bc;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
- /* border-style: solid;
-  border-color: black;*/
+}
+
+.container-main h2 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+}
+
+.container-main p {
+  color: black;
+  text-align: inherit;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 10px;
 }
 
 .home-img {
@@ -120,146 +123,191 @@ p {
   margin-right: auto;
   width: 80%;
   height: auto;
+  box-shadow: 0px 8px 7px #386d9b;
   border-style: dotted;
   border-color: #1d2d44;
   border-radius: 50%;
+}
+
+.submit-form {
+  background-color: #013a63;
+  width: 80%;
+  /*padding: 20px 10px;*/
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.submit-form h4 {
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+}
+
+#first-name  {
+  margin: 10px 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+#email {
+  margin: 10px 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+#message {
+  margin: 10px 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+.submit-button {
+  background-color: #7d8597;
+  width: 80%;
+  padding: 10px 15px;
+  margin: 10px 20px;
+  border-radius: 25px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  opacity: 0.6;
 }
 
 .footer-main {
   background-color: #3e5c76;
   width: 100%;
   border-radius: 0 0 25px 25px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .footer-main p {
+  color: black;
+  text-align: inherit;
+  font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
   font-size: 20px;
+  padding: 5px 8px;
 }
+
+.footer-main .fa-facebook {
+  float: right;
+  color: white;
+  background-color: #001233;
+  padding: 20px;
+  font-size: 22px;
+  width: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.footer-main .fa-twitter {
+  float: right;
+  color: white;
+  background-color: #001233;
+  padding: 20px;
+  font-size: 22px;
+  width: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.footer-main .fa-instagram {
+  float: right;
+  color: white;
+  background-color: #001233;
+  padding: 20px;
+  font-size: 22px;
+  width: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+  text-align: center;
+  border-radius: 25px;
+  
+}
+
+/* Pop Up Submit Form Confirmation Page */
+
+/* The Modal (background) */
+.submit-popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popup-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* Medium & Large Media Queries */
 
 /* For Tablet View*/
-@media screen and (min-width: 480px) {
-  * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .background {
-    background-color: #d7e3fc;
-    padding: 10px;
-  }
-  
+@media screen and (min-width: 460px) {
+
   /* Begin Mobile Nav Bar */
-  .mobile-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto 40px;  
-    background-color: #82a0bc;
-    border-radius : 25px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .top-nav {
-    overflow: hidden;
-    background-color: #3e5c76;
-    border-radius: 25px 25px 0 0;
-    position: relative;
-  }
-  
-  .top-nav #links {
-    display: none;
-    font-size: 20px;
-    font-style: oblique;
-  }
-  
-  .top-nav a {
-    font-family: 'Dancing Script', cursive;
-    font-style: bold;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    margin: 10px;
-    padding: 0;
-  }
-  
-  .top-nav a.icon {
-    background: #82a0bc;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .top-nav a.icon:hover {
-    background-color: #3e5c76;
-    color: black;
-  }
-  
-  .top-nav a:hover {
-    background-color: #89c2d9;
-    color: black;
-  }
-  
-  .active {
-    width: 100%;
-    background-color: white;
-    color: black;
+  .top-nav h1 {
+    font-size: ;
   }
   /* End Mobile Nav Bar */
   
-  h1 {
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  p {
-    color: black;
-    text-align: inherit;
-    font-family: 'Shadows Into Light', cursive;
-  }
-  
-  .container-header {
-    display: hidden;
-  }
-  
   .container-main {
-    /*background-image: linear-gradient(to right, #9bafd9 , #103783);*/
     background-color: #82a0bc;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-   /* border-style: solid;
-    border-color: black;*/
   }
   
   .home-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     height: auto;
+    box-shadow: 0px 8px 7px #386d9b;
     border-style: dotted;
     border-color: #1d2d44;
     border-radius: 25%;
   }
   
   .footer-main {
-    /*background-image: linear-gradient(to right, #9bafd9 , #103783);*/
     background-color: #3e5c76;
     width: 100%;
     border-radius: 0 0 25px 25px;
-    /*height: 60px;*/
-    /*border-style: solid;
-    border-color: black;*/
   }
   
   .footer-main p {
@@ -270,85 +318,86 @@ p {
 
 /* For Desktop View */
 @media screen and (min-width: 980px) {
-  
-  /* Begin Mobile Nav Bar */
-  .mobile-container {
-    
-  }
-  
-  .top-nav {
-    
-  }
-  
-  .top-nav #links {
-    
-  }
-  
-  .top-nav a {
-    
-  }
-  
-  .top-nav a.icon {
-    
-  }
-  
-  .top-nav a.icon:hover {
-    
-  }
-  
-  .top-nav a:hover {
-    
-  }
-  
-  /*.active {
-    background-color: #3e5c76;
-    color: black;
-  }*/
-  /* End Mobile Nav Bar */
-  
-  h1 {
-    color: black;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+
+  .mobile-container #links {
+    display: inline-block;
+    float: right;
+    margin: auto;
     padding: 0;
-    margin: 0;
+
+  }
+
+  .top-nav h1 {
+    font-size: 75px;
+    margin-top: 20px;
+  }
+
+  /* Removes Hamburger Menu */
+  .top-nav a.icon {
+    display: none;
   }
   
-  p {
-    color: black;
-    text-align: inherit;
-    font-family: 'Shadows Into Light', cursive;
+  .main-title {
+    display: none;
   }
-  
-  .container-header {
-    display: hidden;
+
+  .search-bar input {
+    height: 30px;
+    width: auto;
   }
   
   .container-main {
-    /*background-image: linear-gradient(to right, #9bafd9 , #103783);*/
     background-color: #82a0bc;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-   /* border-style: solid;
-    border-color: black;*/
   }
   
   .home-img {
+    border-radius: 0%;
+    width: 100%
+    transition: 1s ease;
+  }
+
+  /* Home Images Animation */
+
+  .home-img:hover {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: 1s ease;
+  }
+
+  .container-main h2 {
+    font-size: 45px;
+  }
+
+  .container-main p {
+    font-size: 25px;
+    padding: 20px;
     width: 100%;
-    height: auto;
-    border-style: dotted;
-    border-color: #1d2d44;
+  }
+
+  .submit-form {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .submit-form h4 {
+    font-size: 35px;
+    margin: auto;
+    width: 50%;
+  }
+
+  #first-name {
+    padding: 10px;
+    width: 80%
   }
   
   .footer-main {
-    /*background-image: linear-gradient(to right, #9bafd9 , #103783);*/
     background-color: #3e5c76;
     width: 100%;
     border-radius: 0 0 25px 25px;
-    /*height: 60px;*/
-    /*border-style: solid;
-    border-color: black;*/
   }
   
   .footer-main p {

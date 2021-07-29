@@ -9,6 +9,8 @@
         <!-- CSS Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
         <!-- Nav Bar Icon for Mobile-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,6 +19,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <script defer src="js/scripts.js"></script>
+
+        <!-- Social Media Buttons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Stormy Thoughts</title>
     </head>
@@ -28,13 +33,12 @@
 
             <!-- Top Navigation Menu -->
             <div class="top-nav">
-                <a href="#main-title">
                     <h1>Stormy Thoughts</h1>
-                </a>
             <div id="links">
-                <a href="#home" class="active">Home</a>
+                <a href="#home">Home</a>
                 <a href="#aboutme">About Me</a>
                 <a href="#Questionare">Questionare</a>
+                <a href="#Resources">Resources</a>
             </div>
 
             <!-- JavaScript for Mobile Nav Bar -->
@@ -43,34 +47,51 @@
             </a>
         </div>
     
-        <!-- Header Container including Title, Logo Icon & Nav Bar -->
         <header class="container-header">
-            <div>
+            <div class="main-title">
                 <h1>Stormy Thoughts</h1>
+            </div>
+            <form action="submit.html" class="search-bar">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div>
+                <img class="home-img"  src="img/blonde-girl-ocean-pexels.jpg" alt="blonde girl looking at at ocean">
             </div>
         </header>
         <main class="container-main">
-            <img class="home-img" src="img/blonde-girl-ocean-pexels.jpg" alt="blonde girl looking at at ocean">
-
-            <h2>How important is <u>your</u> Mental Health? </h2>
+            <h2>How important is Mental Health to <u>YOU</u>? </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia. Vitae turpis massa sed elementum tempus egestas sed sed. Consequat mauris nunc congue nisi. Phasellus egestas tellus rutrum tellus pellentesque. Eget mauris pharetra et ultrices neque ornare aenean. In ante metus dictum at tempor commodo ullamcorper a lacus. Vitae congue mauris rhoncus aenean vel. Ipsum consequat nisl vel pretium lectus quam. Urna duis convallis convallis tellus id interdum.</p>
-            <form class="submit-form" action="/action_page.php">  
+            <form class="submit-form" action="action_page.php">
+                <h4>What are your thoughts?</h4>  
                 <div>
-                    <input type="text" id="first-name" name="firstname" placeholder="First name" required>
+                    <input id="first-name" type="text"  name="firstname" placeholder="First name" required>
                 </div>
                 <div>
-                    <input type="text" id="email" name="email" placeholder="E-mail address" required>
+                    <input id="email" type="text"  name="email" placeholder="E-mail address" required>
                 </div>
                 <div>
-                    <textarea id="message" name="message" placeholder="What are your thoughts?"></textarea>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Submit">
+                    <button id="submitButton"
+                    class="submit-button">Submit</button>
+                </div>
+                <div id="submitForm" class="submit-popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <img src="img/storm-clouds-icon.png" alt="storm clouds icon">
+                    <p>Thank you for sharing your thoughts with us!</p>
+                </div>
                 </div>
             </form>
+            <p>Pretium aenean pharetra magna ac. Nibh mauris cursus mattis molestie. Morbi tincidunt ornare massa eget egestas purus. Habitant morbi tristique senectus et netus et malesuada fames ac. Tortor dignissim convallis aenean et tortor. Porttitor eget dolor morbi non arcu risus quis varius. Arcu odio ut sem nulla pharetra. Ac felis donec et odio pellentesque diam volutpat. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Neque gravida in fermentum et sollicitudin ac orci. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Placerat in egestas erat imperdiet sed euismod nisi porta. Vel pretium lectus quam id leo in vitae turpis. Integer malesuada nunc vel risus commodo viverra. A lacus vestibulum sed arcu. Felis eget nunc lobortis mattis aliquam faucibus purus. Ac orci phasellus egestas tellus rutrum.</p>
         </main>
         <footer class="footer-main">
             <p>&copy; 2021 Stormy Thoughts</p>
+            <a href="www.facebook.com" class="fa fa-facebook"></a>
+            <a href="www.twitter.com" class="fa fa-twitter"></a>
+            <a href="www.instagram.com" class="fa fa-instagram"></a>
         </footer>
     </body> 
 </html>
