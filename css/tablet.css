@@ -1,0 +1,39 @@
+/* Medium Media Query - For Tablet View*/
+@media screen and (min-width: 460px) {
+
+ /* Begin Mobile Nav Bar */
+ .top-nav h1 {
+   font-size: ;
+ }
+ /* End Mobile Nav Bar */
+ 
+ .container-main {
+   background-color: #82a0bc;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ 
+ .home-img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   height: auto;
+   box-shadow: 0px 8px 7px #386d9b;
+   border-style: dotted;
+   border-color: #1d2d44;
+   border-radius: 25%;
+ }
+ 
+ .footer-main {
+   background-color: #3e5c76;
+   width: 100%;
+   border-radius: 0 0 25px 25px;
+ }
+ 
+ .footer-main p {
+   font-weight: bold;
+   font-size: 20px;
+ }
+}

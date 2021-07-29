@@ -1,0 +1,88 @@
+/* Large Media Query - For Desktop View */
+@media screen and (min-width: 980px) {
+
+ .mobile-container #links {
+
+ }
+
+ .top-nav h1 {
+   /*display: none;*/
+ }
+
+ /* Removes Hamburger Menu */
+ .top-nav a.icon {
+   /*display: none;*/
+ }
+
+ .container-header {
+  background-color: #3e5c76;
+ }
+
+ .search-bar input {
+   height: 30px;
+   width: auto;
+ }
+ 
+ .container-main {
+   background-color: #82a0bc;
+   width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ 
+ .home-img {
+   border-radius: 0%;
+   width: 100%
+   transition: 1s ease;
+ }
+
+ /* Home Images Animation */
+
+ .home-img:hover {
+   transform: scale(0.8);
+   -webkit-transform: scale(0.8);
+   -ms-transform: scale(0.8);
+   transition: 1s ease;
+ }
+
+ .container-main h2 {
+   font-size: 45px;
+ }
+
+ .container-main p {
+   font-size: 25px;
+   padding: 20px;
+   width: 100%;
+ }
+
+ .submit-form {
+   padding: 50px;
+   text-align: center;
+ }
+
+ .submit-form h4 {
+   font-size: 35px;
+   margin: auto;
+   width: 50%;
+ }
+
+ #first-name {
+   padding: 10px;
+   width: 80%
+ }
+
+ .fa fa-facebook {
+  display: none;
+ }
+ 
+ .footer-main {
+   background-color: #3e5c76;
+   width: 100%;
+   border-radius: 0 0 25px 25px;
+ }
+ 
+ .footer-main p {
+   font-weight: bold;
+   font-size: 20px;
+ }
+}

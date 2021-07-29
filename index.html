@@ -18,8 +18,10 @@
         <!-- CSS and JS spreadsheets for Webpage -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/desktop.css">
         <script defer src="js/scripts.js"></script>
-
+        
         <!-- Social Media Buttons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,7 +36,7 @@
             <!-- Top Navigation Menu -->
             <div class="top-nav">
                     <h1>Stormy Thoughts</h1>
-            <div id="links">
+            <div id="links" class="side-nav">
                 <a href="#home">Home</a>
                 <a href="#aboutme">About Me</a>
                 <a href="#Questionare">Questionare</a>
@@ -51,12 +53,13 @@
             <div class="main-title">
                 <h1>Stormy Thoughts</h1>
             </div>
-            <form action="submit.html" class="search-bar">
-                <input type="text" placeholder="Search" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-            <div>
+            <div id="fade">
+
                 <img class="home-img"  src="img/blonde-girl-ocean-pexels.jpg" alt="blonde girl looking at at ocean">
+                <img class="home-img" src="img/self-care-isnt-selfish-pexels.jpg" alt="self care isn't selfish board">
+                <img class="home-img" src="img/people-hugs-pexels.jpg" alt="two people hugging">
+
+
             </div>
         </header>
         <main class="container-main">
@@ -80,18 +83,19 @@
                 <div id="submitForm" class="submit-popup">
                 <div class="popup-content">
                     <span class="close">&times;</span>
-                    <img src="img/storm-clouds-icon.png" alt="storm clouds icon">
                     <p>Thank you for sharing your thoughts with us!</p>
                 </div>
                 </div>
             </form>
             <p>Pretium aenean pharetra magna ac. Nibh mauris cursus mattis molestie. Morbi tincidunt ornare massa eget egestas purus. Habitant morbi tristique senectus et netus et malesuada fames ac. Tortor dignissim convallis aenean et tortor. Porttitor eget dolor morbi non arcu risus quis varius. Arcu odio ut sem nulla pharetra. Ac felis donec et odio pellentesque diam volutpat. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Neque gravida in fermentum et sollicitudin ac orci. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Placerat in egestas erat imperdiet sed euismod nisi porta. Vel pretium lectus quam id leo in vitae turpis. Integer malesuada nunc vel risus commodo viverra. A lacus vestibulum sed arcu. Felis eget nunc lobortis mattis aliquam faucibus purus. Ac orci phasellus egestas tellus rutrum.</p>
+            <div class="footer-icons">
+                <a href="www.facebook.com" class="fa fa-facebook"></a>
+                <a href="www.twitter.com" class="fa fa-twitter"></a>
+                <a href="www.instagram.com" class="fa fa-instagram"></a>
+            </div>
         </main>
         <footer class="footer-main">
             <p>&copy; 2021 Stormy Thoughts</p>
-            <a href="www.facebook.com" class="fa fa-facebook"></a>
-            <a href="www.twitter.com" class="fa fa-twitter"></a>
-            <a href="www.instagram.com" class="fa fa-instagram"></a>
         </footer>
     </body> 
 </html>
