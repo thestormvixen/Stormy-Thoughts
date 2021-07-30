@@ -3,27 +3,13 @@
 
  /* Begin Mobile Nav Bar */
  .top-nav h1 {
-   font-size: ;
+   font-size: 60px;
  }
  /* End Mobile Nav Bar */
  
- .container-main {
-   background-color: #82a0bc;
-   width: 100%;
-   margin-top: 10px;
-   margin-bottom: 10px;
- }
- 
  .home-img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
-   height: auto;
-   box-shadow: 0px 8px 7px #386d9b;
-   border-style: dotted;
-   border-color: #1d2d44;
    border-radius: 25%;
+   margin-bottom: 25px;
  }
  
  .footer-main {
@@ -36,4 +22,31 @@
    font-weight: bold;
    font-size: 20px;
  }
+
+/* FlexBox*/
+
+.container-main {
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: center;
+ align-items: flex-start;
+ flex-wrap: wrap;
+}
+
+.container-main section {
+
+}
+
+.section-1 {
+ flex: 1;
+}
+
+.section-2 {
+ flex: 1;
+}
+
+.section-3 {
+ flex: auto;
+}
+
 }

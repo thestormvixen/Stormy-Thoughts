@@ -53,47 +53,48 @@
             <div class="main-title">
                 <h1>Stormy Thoughts</h1>
             </div>
-            <div id="fade">
-
+            <div>
                 <img class="home-img"  src="img/blonde-girl-ocean-pexels.jpg" alt="blonde girl looking at at ocean">
-                <img class="home-img" src="img/self-care-isnt-selfish-pexels.jpg" alt="self care isn't selfish board">
-                <img class="home-img" src="img/people-hugs-pexels.jpg" alt="two people hugging">
-
-
             </div>
         </header>
         <main class="container-main">
+
+            <div class="section section-1">
             <h2>How important is Mental Health to <u>YOU</u>? </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia. Vitae turpis massa sed elementum tempus egestas sed sed. Consequat mauris nunc congue nisi. Phasellus egestas tellus rutrum tellus pellentesque. Eget mauris pharetra et ultrices neque ornare aenean. In ante metus dictum at tempor commodo ullamcorper a lacus. Vitae congue mauris rhoncus aenean vel. Ipsum consequat nisl vel pretium lectus quam. Urna duis convallis convallis tellus id interdum.</p>
-            <form class="submit-form" action="action_page.php">
-                <h4>What are your thoughts?</h4>  
-                <div>
-                    <input id="first-name" type="text"  name="firstname" placeholder="First name" required>
-                </div>
-                <div>
-                    <input id="email" type="text"  name="email" placeholder="E-mail address" required>
-                </div>
-                <div>
-                    <textarea id="message" name="message" placeholder="Message" required></textarea>
-                </div>
-                <div>
-                    <button id="submitButton"
-                    class="submit-button">Submit</button>
-                </div>
-                <div id="submitForm" class="submit-popup">
-                <div class="popup-content">
-                    <span class="close">&times;</span>
-                    <p>Thank you for sharing your thoughts with us!</p>
-                </div>
-                </div>
-            </form>
-            <p>Pretium aenean pharetra magna ac. Nibh mauris cursus mattis molestie. Morbi tincidunt ornare massa eget egestas purus. Habitant morbi tristique senectus et netus et malesuada fames ac. Tortor dignissim convallis aenean et tortor. Porttitor eget dolor morbi non arcu risus quis varius. Arcu odio ut sem nulla pharetra. Ac felis donec et odio pellentesque diam volutpat. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Neque gravida in fermentum et sollicitudin ac orci. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Placerat in egestas erat imperdiet sed euismod nisi porta. Vel pretium lectus quam id leo in vitae turpis. Integer malesuada nunc vel risus commodo viverra. A lacus vestibulum sed arcu. Felis eget nunc lobortis mattis aliquam faucibus purus. Ac orci phasellus egestas tellus rutrum.</p>
-            <div class="footer-icons">
-                <a href="www.facebook.com" class="fa fa-facebook"></a>
-                <a href="www.twitter.com" class="fa fa-twitter"></a>
-                <a href="www.instagram.com" class="fa fa-instagram"></a>
             </div>
+
+            <div class="section section-2">
+
+                <form method="POST" action="index.html" class="submit-form" name="contact-submit" onsubmit="return validation(this)">
+                    <h4>What are your thoughts?</h4>  
+                    <div>
+                        <input id="name" type="text"  name="firstname" placeholder="First name" required>
+                    </div>
+                    <div>
+                        <input id="email" type="text"  name="email" placeholder="E-mail address" required>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-button" value="Validate">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="section section-3">
+            <p>Pretium aenean pharetra magna ac. Nibh mauris cursus mattis molestie. Morbi tincidunt ornare massa eget egestas purus. Habitant morbi tristique senectus et netus et malesuada fames ac. Tortor dignissim convallis aenean et tortor. Porttitor eget dolor morbi non arcu risus quis varius. Arcu odio ut sem nulla pharetra. Ac felis donec et odio pellentesque diam volutpat. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Neque gravida in fermentum et sollicitudin ac orci. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Placerat in egestas erat imperdiet sed euismod nisi porta. Vel pretium lectus quam id leo in vitae turpis. Integer malesuada nunc vel risus commodo viverra. A lacus vestibulum sed arcu. Felis eget nunc lobortis mattis aliquam faucibus purus. Ac orci phasellus egestas tellus rutrum.</p>
+            </div>
+
         </main>
+
+        <div class="footer-icons">
+            <a href="www.facebook.com" class="fa fa-facebook fa-icon--cont"></a>
+            <a href="www.twitter.com" class="fa fa-twitter fa-icon--cont"></a>
+            <a href="www.instagram.com" class="fa fa-instagram fa-icon--cont"></a>
+        </div>
+
         <footer class="footer-main">
             <p>&copy; 2021 Stormy Thoughts</p>
         </footer>

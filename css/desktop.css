@@ -1,12 +1,8 @@
 /* Large Media Query - For Desktop View */
 @media screen and (min-width: 980px) {
 
- .mobile-container #links {
-
- }
-
  .top-nav h1 {
-   /*display: none;*/
+  font-size: 100px;
  }
 
  /* Removes Hamburger Menu */
@@ -15,7 +11,7 @@
  }
 
  .container-header {
-  background-color: #3e5c76;
+  /*background-color: #3e5c76;*/
  }
 
  .search-bar input {
@@ -23,26 +19,10 @@
    width: auto;
  }
  
- .container-main {
-   background-color: #82a0bc;
-   width: 100%;
-   margin-top: 10px;
-   margin-bottom: 10px;
- }
- 
  .home-img {
    border-radius: 0%;
-   width: 100%
-   transition: 1s ease;
- }
-
- /* Home Images Animation */
-
- .home-img:hover {
-   transform: scale(0.8);
-   -webkit-transform: scale(0.8);
-   -ms-transform: scale(0.8);
-   transition: 1s ease;
+   width: 100%;
+   margin-bottom: 45px;
  }
 
  .container-main h2 {
@@ -66,7 +46,7 @@
    width: 50%;
  }
 
- #first-name {
+ #name {
    padding: 10px;
    width: 80%
  }
@@ -85,4 +65,14 @@
    font-weight: bold;
    font-size: 20px;
  }
+
+/* FlexBox*/
+
+.container-main {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
 }

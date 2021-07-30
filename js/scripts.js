@@ -9,43 +9,30 @@ function myFunction() {
 }
 
 
-// Popup Submit Form Confirmation
-// Get the modal
-var modal = document.getElementById("submitForm");
-
-// Get the button that opens the modal
-var btn = document.getElementById("submitButton");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+//Validation of Contact form
+function validation(theForm){
+  //sets variable and looks at their value
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var feedback = document.getElementById("message").value;
+      //checks to see if the name field is blank 
+      if( name ===''){
+          alert("Please fill in your Name!");
+          return false;
+      }
+      //checks to see if the email field is blank
+      else if( email ===''){
+          alert("Please fill in your E-mail!");
+          return false;
+      }
+      //checks to see if the message field is left blank
+      else if( message ===''){
+          alert("Please fill in your Message!");
+          return false;
+      }
+      //if everything is filled in properly returns a message
+      else{
+          alert('Thank you, ' + name + ', your message: "' + feedback + '" has been sent! Thank you for providing your thoughts to us!')
+          return true;
+      }
 }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-// Fade Animation for Home Images
-
-window.addEventListener("DOMContentLoaded", function(e) {
-
-  var stage = document.getElementById("fade");
-  var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-  var arr = stage.getElementsByTagName("home-img");
-  for(var i=0; i < arr.length; i++) {
-    arr[i].addEventListener("animationend", fadeComplete, false);
-  }
-
-}, false);

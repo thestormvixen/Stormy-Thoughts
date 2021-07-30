@@ -12,15 +12,21 @@ html {
   padding: 20px;
 }
 
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 /* Begin Mobile Nav Bar */
 .mobile-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto 40px;  
   background-color: #82a0bc;
   border-radius : 25px;
   color: black;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 
 .top-nav {
@@ -72,6 +78,19 @@ html {
 
 /* End Mobile Nav Bar */
 
+.home-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  box-shadow: 0px 8px 7px #386d9b;
+  border-style: dotted;
+  border-color: #1d2d44;
+  border-radius: 50%;
+}
+
 .main-title h1 {
   display: none;
 }
@@ -79,8 +98,12 @@ html {
 .container-main {
   background-color: #82a0bc;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .container-main h2 {
@@ -97,45 +120,9 @@ html {
   padding: 10px;
 }
 
-/* Fade Animation for Home Images */
-#fade .home-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 80%;
-  height: auto;
-  box-shadow: 0px 8px 7px #386d9b;
-  border-style: dotted;
-  border-color: #1d2d44;
-  border-radius: 50%;
-  /*position: absolute;*/
-}
-
-#fade .home-img:nth-of-type(1) {
-  animation-name: fader;
-  animation-delay: 6s;
-  animation-duration: 2s;
-  z-index: 20;
-}
-
-#fade .home-img:nth-of-type(n+3) {
-  display: none;
-}
-
-#fade .home-img:nth-of-type(2) {
-  z-index: 10;
-}
-
-@keyframes fader {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
-}
-
 /* Submission Form bottom page*/
 .submit-form {
   background-color: #013a63;
-  width: 80%;
   padding: 20px;
   margin: auto;
   text-align: center;
@@ -147,7 +134,7 @@ html {
   font-size: 22px;
 }
 
-#first-name  {
+#name {
   margin: 10px 20px;
   padding: 10px;
   width: 80%;
@@ -180,44 +167,25 @@ html {
 }
 
 /* Social Media Icons */
-.container-main .fa-facebook {
-  float: right;
-  color: white;
-  background-color: #001233;
-  padding: 20px;
-  font-size: 22px;
-  width: 30px;
-  text-decoration: none;
-  margin: 5px 2px;
-  text-align: center;
-  border-radius: 25px;
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.container-main .fa-twitter {
-  float: right;
+.fa-icon--cont {
+  /* float: right; */
   color: white;
   background-color: #001233;
-  padding: 20px;
-  font-size: 22px;
-  width: 30px;
+  padding: 5px;
+  font-size: 36px!important;
+  width: 48px;
   text-decoration: none;
   margin: 5px 2px;
   text-align: center;
   border-radius: 25px;
-}
-
-.container-main .fa-instagram {
-  float: right;
-  color: white;
-  background-color: #001233;
-  padding: 20px;
-  font-size: 22px;
-  width: 30px;
-  text-decoration: none;
-  margin: 5px 2px;
-  text-align: center;
-  border-radius: 25px;
-  
+  height: 48px;
 }
 
 /* Footer of webpage */
@@ -235,49 +203,4 @@ html {
   font-weight: bold;
   font-size: 20px;
   padding: 5px 8px;
-}
-
-
-/* Pop Up Submit Form Confirmation Page */
-
-/* The Modal (background) */
-.submit-popup {
-  background-image: url("/img/rain-cloud-popup.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: white;
-}
-
-/* Modal Content */
-.popup-content {
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  font-size: 20px;
-  font-family: 'Shadows Into Light', cursive;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
