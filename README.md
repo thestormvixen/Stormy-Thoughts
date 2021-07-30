@@ -20,12 +20,12 @@ Media Queries:
 
 - Mobile-first
   1. Home image border 50% making an oval shape along with a box shadow effect
-  2. All contents in column format - one item under another
+  2. Flex box used, contents in column under each other, first paragraph to form to last paragraph and social media icons
 
 - Medium - Tablet View
   1. Home image border 25% make a slight round effect to image with a box shadow effect, also larger
-  2. All contents still in column format, but Submission Form moved under 2nd paragraph
+  2. Flex box used, form moved to left side of first paragraph, last paragraph on bottom followed by social media icons
 
 - Large - Desktop View
   1. Home image 100% width of page, also larger
-  2. Both paragraphs and Submission Form setup in columns next to each other
+  2. Flex box used, form moved to right side of first paragraph, last paragraph on bottom followed by social media icons
