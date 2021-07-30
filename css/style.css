@@ -26,7 +26,6 @@ html {
   background-color: #82a0bc;
   border-radius : 25px;
   color: black;
-  /*border-radius: 10px;*/
 }
 
 .top-nav {
@@ -103,7 +102,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .container-main h2 {
@@ -175,7 +173,6 @@ html {
 }
 
 .fa-icon--cont {
-  /* float: right; */
   color: white;
   background-color: #001233;
   padding: 5px;

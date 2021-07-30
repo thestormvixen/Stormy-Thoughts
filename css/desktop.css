@@ -5,15 +5,6 @@
   font-size: 100px;
  }
 
- /* Removes Hamburger Menu */
- .top-nav a.icon {
-   /*display: none;*/
- }
-
- .container-header {
-  /*background-color: #3e5c76;*/
- }
-
  .search-bar input {
    height: 30px;
    width: auto;
